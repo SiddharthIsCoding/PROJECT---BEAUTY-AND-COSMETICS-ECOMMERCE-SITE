@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+body
+{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.header
+{
+    width: 100%;
+    height:45vh;
+    background-image: url("C:/Users/Siddharth Mishra/Desktop/PROJECT - BEAUTY AND COSMETICS ECOMMERCE SITE/images/header1.jfif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#filter1
+{
+    width: 100%;
+    height: 100%;
+    background: rgba(111, 219, 252, 0.6);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+#main-nav
+{
+    margin-left: 60%;
+}
+
+#main-nav > li
+{
+    width: 100px;
+    transition: 0.3s;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#logo1
+{
+    width: 100px;
+    height: 80px;
+
+}
+
+#logo2
+{
+    width: 50%;
+    height: 60vh;
+}
+
+.header > img
+{
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-nav > li:hover
+{
+    background:rgb(221, 221, 221);
+}
+
+
+.section1
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 65vh;
+    background:rgb(245, 245, 245);
+    position: relative;
+}
+
+.section1 > h1
+{
+    position: relative;
+    top: 50px;
+    left: 10%;
+    font-family:  'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+    border-style: dashed;
+    display: inline;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.section1 > p
+{
+    position: relative;
+    left: 50%;
+    top: 100px;
+}
+
+.section-img
+{
+    width: 45%;
+    height: 100%;
+    display: inline;
+}
+
+.right
+{
+    position: absolute;
+    right: 0px;
+}
+
+.left
+{
+    position: absolute;
+    left: 0px;
+}
+
+
+#section2
+{
+    
+    margin-top: 50px;
+    width: 100%;
+    height: 65vh;
+    background:rgb(245, 245, 245);
+    position: relative;
+}
+
+#section2 > h1
+{
+    
+    position: relative;
+    top: 50px;
+    left: 70%;
+    font-family:  'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+    border-style: dashed;
+    display: inline;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#section2 > p
+{
+    text-align: right;
+    position: relative;
+    right: 50%;
+    top:100px;
+}
+
+#section3
+{
+    width: 100%;
+    height: 50vh;
+    background: rgb(230, 230, 230);
+    margin-top: 25vh;
+    padding: 20px;
+}
+
+#section3 > ul > li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#section3 > ul > li > div
+{
+    width: 20%;
+    height: 40vh;
+    background: rgb(255, 255, 255);
+}
+
+
+#itemcase
+{
+    width: 100%;
+    height: 50vh;
+    background: rgb(221, 221, 221);
+    margin-top: 30vh;
+}
+
+#caseitem
+{
+    width: 20%;
+    height: 40vh;
+    background: white;
+    display: inline-block;
+    margin-left: 50px;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 10px;
+}
+
+#caseitem > img
+{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+
+#caseitem:hover
+{
+    transform: translateY(-20px);
+}
+
+/* .carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+
+
+#filter2
+{
+    background: rgba(121, 238, 253, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index:100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} */
+
+
+
+#quote-section
+{
+    width: 100%;
+    height: 50vh;
+    background-color: #4e6cbf;
+    background-image: url("C:/Users/Siddharth Mishra/Desktop/PROJECT - BEAUTY AND COSMETICS ECOMMERCE SITE/images/overlay1.png");
+
+
+}
+
+
+#quote-section > h1
+{
+    font-family: 'Spectral', serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-size: 55px;
+}
+
+
+#footer
+{
+    width: 100%;
+    background: rgb(209, 209, 209);
+    height: 40vh;
+    transform: translateY(-10px);
+}
+
+
+
+
+.btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.template-demo>.btn {
+    margin-right: 0.5rem !important
+}
+
+.template-demo {
+    margin-top: 0.5rem !important
+}
+
+.btn-outline-facebook {
+    border: 1px solid #3b579d;
+    color: #3b579d
+}
+
+.btn-outline-facebook:hover {
+    background: #3b579d;
+    color: #ffffff
+}
+
+.btn-outline-youtube {
+    border: 1px solid #e52d27;
+    color: #e52d27
+}
+
+.btn-outline-twitter {
+    border: 1px solid #2caae1;
+    color: #2caae1
+}
+
+.btn-outline-dribbble {
+    border: 1px solid #ea4c89;
+    color: #ea4c89
+}
+
+.btn-outline-linkedin {
+    border: 1px solid #0177b5;
+    color: #0177b5
+}
+
+.btn-outline-instagram {
+    border: 1px solid #dc4a38;
+    color: #dc4a38
+}
+
+.btn-outline-twitter:hover {
+    background: #2caae1;
+    color: #ffffff
+}
+
+.btn-outline-linkedin:hover {
+    background: #0177b5;
+    color: #ffffff
+}
+
+.btn-outline-youtube:hover {
+    background: #e52d27;
+    color: #ffffff
+}
+
+.btn-outline-instagram:hover {
+    background: #e52d27;
+    color: #ffffff
+}
+
+.btn-facebook {
+    background: #3b579d;
+    color: #ffffff
+}
+
+.btn-youtube {
+    background: #e52d27;
+    color: #ffffff
+}
+
+.btn-twitter {
+    background: #2caae1;
+    color: #ffffff
+}
+
+.btn-dribbble {
+    background: #ea4c89;
+    color: #ffffff
+}
+
+.btn-linkedin {
+    background: #0177b5;
+    color: #ffffff
+}
+
+.btn-instagram {
+    background: #dc4a38;
+    color: #ffffff
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+    background: #2d4278;
+    color: #ffffff
+}
+
+.btn-youtube:hover,
+.btn-youtube:focus {
+    background: #c21d17;
+    color: #ffffff
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+    background: #1b8dbf;
+    color: #ffffff
+}
+
+.btn-dribbble:hover,
+.btn-dribbble:focus {
+    background: #e51e6b;
+    color: #ffffff
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus {
+    background: #015682;
+    color: #ffffff
+}
+
+.btn-instagram:hover,
+.btn-instagram:focus {
+    background: #bf3322;
+    color: #ffffff
+}
+
+
+
+#footer > p
+{
+
+
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+
+
+#nav-list
+{
+    position:relative;
+    left: 60%;
+    bottom: 150px;
+}
+
+#nav-list > li
+{
+    list-style-type: square;
+    margin-top: 20px;
+}
+
+#nav-list > li > a
+{
+    color: black;
+}
+
+
+
+
+#nav-logo
+{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    right: 10px;
+    bottom: 200px;
+}
+
+
+
+
+#nav-name
+{
+    position: absolute;
+    left: 75%;
+    bottom:100px;
+    font-size: 55px;
+    font-family: 'Meow Script', cursive;
+}
+
+
+#subscribe
+{
+    position: absolute;
+    right:100px;
+    bottom: 10px;
+    border: 10px solid rgb(111, 219, 252);
+    border-radius: 10px;
+}
+
+
+#useremail
+{
+
+    width: 300px;
+    border-radius: 5px;
+    height: 35px;
+    outline: none;
+    border: none;
+
+}
+
+
+
+#sub-btn
+{
+    width: 100px;
+    height: 35px;
+    outline: none;
+    background: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+#sub-btn:hover
+{
+    background: #bf3322;
+}
+
+
+/* responsive css */
+
+@media screen and (max-width:600px)
+{
+    #logo2
+    {
+        width: 300px;
+        height: 50vh;
+    }
+
+    .section1 > h1
+    {
+        text-align: center;
+    }
+
+    .section-img
+    {
+        width: 100%;
+        margin-top: 30vh;
+    }
+
+    .section1 > p
+    {
+        text-align: center;
+       left: 0px;
+    }
+
+    #section2 > h1
+    {
+        left:15%;
+    }
+
+    #section2 > p
+    {
+        text-align: center;
+        left: 0%;
+    }
+
+    #caseitem
+    {
+        width: 30%;
+        margin-left: 10px;
+        position: relative;
+        top: 40vh;
+        left: 40px;
+    }
+
+    #quote-section
+    {
+        background: rgb(221, 221, 221);
+
+
+    }
+
+    #quote-section > h1
+    {
+        display: none;
+    }
+
+    #footer-desc
+    {
+        display: none;
+    }
+
+    #subscribe
+    {
+        position: relative;
+        left: 0px;
+    }
+
+    #useremail
+    {
+        width: 100%;
+    }
+
+    #nav-name
+    {
+        left: 5%;
+        bottom: 50px;
+    }
+
+    #nav-list
+    {
+        bottom: 0px;
+    }
+
+    #nav-list > li
+    {
+        margin-top: 10px;
+    }
+
+}
